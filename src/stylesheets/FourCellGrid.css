@@ -1,0 +1,19 @@
+
+.FourCellGrid .container {
+  padding: 1em;
+
+  /* override original container margins */
+  max-width: 100%;
+}
+
+.FourCellGrid .cell {
+  padding: 1em;
+  border: 1px solid #c2c46a;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  min-height: 10em;
+}
