@@ -1,0 +1,39 @@
+
+.FourCellFlex .container {
+  display: flex;
+  padding: 1em;
+}
+
+.FourCellFlex .cell {
+  border: 1px solid #c2c46a;
+}
+
+.FourCellFlex .cell > * {
+  margin: 1em;
+}
+
+@media (min-width: 721px) {
+  .FourCellFlex .cell {
+    flex: 1 0 24%;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 720px) {
+  .FourCellFlex .container {
+    flex-flow: wrap;
+  }
+
+  .FourCellFlex .cell {
+    flex: 1 0 49%;
+  }
+}
+
+@media (max-width: 360px) {
+  .FourCellFlex .container {
+    flex-flow: wrap;
+  }
+
+  .FourCellFlex .cell {
+    flex: 1 0 99%;
+  }
+}
